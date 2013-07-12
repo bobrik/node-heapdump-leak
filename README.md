@@ -45,6 +45,9 @@ kill -USR2 <node pid goes here>
 
 Heap dump size: 35mb, when opened in chrome: 4.8mb.
 
+If you fire 20 000 000 reuqests, heap dump increases, rss increases, chrome shows the same.
+Moreover, requests become slower (3ms in the beginning, up to 500ms when heap dump is around 250mb).
+
 ## Some GC numbers
 
 In production similar server shows:
